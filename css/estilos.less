@@ -31,8 +31,8 @@ h2 {
 
 /** Header **/
 header {
-  border-top: 5px solid #66DDDD;
-  background: fade(@cor-auxiliar, 0.8);
+  border-top: 5px solid @cor-padrao;
+  background: fade(@cor-auxiliar, 80);
   height: 90px;
   width: 100%;
   position: absolute;
@@ -95,7 +95,7 @@ header .container {
 
 .destaque button {
   margin-top: 1em;
-  background: #66DDDD;
+  background: @cor-padrao;
   border: 0;
   padding: .6em;
   font-size: 1.2em;
@@ -103,6 +103,10 @@ header .container {
   border-radius: 0.3em;
   box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
   font-weight: bold;
+}
+
+.destaque button:hover{
+  background: lighten(@cor-padrao,5);
 }
 
 
@@ -185,7 +189,7 @@ header .container {
 .plano h3 {
   color: @cor-branca;
   font-size: 1.8em;
-  background: #66DDDD;
+  background: @cor-padrao;
   text-align: center;
   height: 2em;
   padding-top: .6em;
@@ -194,7 +198,7 @@ header .container {
 
 .plano div {
   text-align: center;
-  color: #66DDDD;
+  color: @cor-padrao;
   font-size: 2.75em;
 }
 
@@ -219,7 +223,7 @@ header .container {
 }
 
 .plano button {
-  background: #66DDDD;
+  background: @cor-padrao;
   border: 0;
   color: @cor-branca;
   width: 210px;
@@ -317,7 +321,7 @@ textarea {
 
 .contato button {
   margin: 0 auto;
-  background: #66DDDD;
+  background: @cor-padrao;
   border: 0;
   color: @cor-branca;
   width: 210px;
